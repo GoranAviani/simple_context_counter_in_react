@@ -5,10 +5,11 @@ import Dashboard from "./dashboard/Dashboard";
 import CounterContext from "./context/CounterContext";
 
 function App() {
+
   return (
-    <CounterContext className="App">
+    <CounterContext.Provider value={{counter: 0}} className="App">
       <Dashboard/>
-    </CounterContext>
+    </CounterContext.Provider>
   );
 }
 
