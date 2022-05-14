@@ -16,12 +16,11 @@ function App() {
 
     const removeHandler = () => {
         setCouterState(counterState - 1)
-
     }
 
     return (
         <CounterContext.Provider
-            value={{counter: CounterCtx, addHandler: addHandler, removeHandler: removeHandler}}>
+            value={{addHandler: addHandler, removeHandler: removeHandler}}>
             <div className="App">
                 {counterState}
 
