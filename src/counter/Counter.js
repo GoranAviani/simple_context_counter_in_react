@@ -8,12 +8,12 @@ const Counter = () => {
 
     return (
         <div className="counter">
-            <div >
+            <div className="number">
                 {ctx.counter}
             </div>
             <span className="buttons">
-            <button onClick={ctx.addHandler}>+</button>
-            <button onClick={ctx.removeHandler}>-</button>
+                <button onClick={ctx.addHandler}>+</button>
+                <button onClick={ctx.removeHandler}>-</button>
             </span>
 
         </div>
