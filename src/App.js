@@ -11,8 +11,10 @@ function App() {
 
 
   return (
-    <CounterContext.Provider value={{counter: counterState, setCouterState: setCouterState}} className="App">
-      <Dashboard/>
+    <CounterContext.Provider class="App"
+                             value={{counter: counterState, setCouterState: setCouterState}} className="App">
+        {counterState}
+        <Dashboard/>
     </CounterContext.Provider>
   );
 }
