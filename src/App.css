@@ -1,7 +1,8 @@
 .App {
-
   text-align: center;
   border: 1px solid red;
   display: flex;
   flex: 1 1 500px;
+  justify-content: center;
+  font-size: 30px;
 }
