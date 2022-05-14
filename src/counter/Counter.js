@@ -7,8 +7,11 @@ const Counter = () => {
     const ctx = useContext(CounterContext)
     return(
         <div>
-            {ctx.counter}
             counter
+            <p>
+                {ctx.counter}
+            </p>
+
         </div>
     )
 }
