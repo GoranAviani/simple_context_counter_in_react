@@ -8,7 +8,7 @@ import {useState} from "react";
 function App() {
 
     const [counterState, setCouterState] = useState(0)
-    const {CounterCtx} = CounterContext
+    const {CounterCtx} = CounterContext.counter
 
     const addHandler = () => {
         setCouterState(counterState + 1)
@@ -20,11 +20,7 @@ function App() {
 
     return (
         <CounterContext.Provider
-            value={{addHandler: addHandler, removeHandler: removeHandler}}>
-            <div className="App">
-                {counterState}
-
-            </div>
+            value={{counter: counterState, addHandler: addHandler, removeHandler: removeHandler}}>
             <Dashboard/>
         </CounterContext.Provider>
     );
