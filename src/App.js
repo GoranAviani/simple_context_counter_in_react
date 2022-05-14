@@ -9,7 +9,7 @@ function App() {
 
     const [counterState, setCouterState] = useState(0)
 
-        const addHandler = () => {
+    const addHandler = () => {
         setCouterState(counterState + 1)
     }
 
@@ -20,7 +20,7 @@ function App() {
 
     return (
         <CounterContext.Provider
-            value={{counter: counterState, addHandler: addHandler, removeHandler:removeHandler}}>
+            value={{counter: counterState, addHandler: addHandler, removeHandler: removeHandler}}>
             <div className="App">
                 {counterState}
 
