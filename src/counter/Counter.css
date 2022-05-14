@@ -1,8 +1,24 @@
 .counter{
     display: flex;
     border: 5px solid black;
+    flex-direction: row;
+    flex: 2 2 500px;
+    height: 50vh;
+}
+
+.number{
+    display: flex;
+    color: blue;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    font-size: 25.5vw;
 }
 
 .buttons{
+    display: flex;
+    width: 50%;
+    flex: 2 2 auto;
+    flex-direction: column;
 
 }
