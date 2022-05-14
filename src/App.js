@@ -8,7 +8,6 @@ import {useState} from "react";
 function App() {
 
     const [counterState, setCouterState] = useState(0)
-    const {CounterCtx} = CounterContext.counter
 
     const addHandler = () => {
         setCouterState(counterState + 1)
