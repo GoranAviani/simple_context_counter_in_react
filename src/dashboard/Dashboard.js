@@ -2,10 +2,15 @@ import React from 'react';
 
 import Counter from "../counter/Counter";
 
+import '../App.css'
+
 const Dashboard = () => {
-    return(
+    return (
         <React.Fragment>
-            Dashboard
+            <div className="App">
+                Dashboard
+            </div>
+
             <Counter/>
         </React.Fragment>
     )
