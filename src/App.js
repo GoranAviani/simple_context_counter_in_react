@@ -10,16 +10,16 @@ function App() {
     const [counterState, setCouterState] = useState(0)
 
 
-  return (
-    <CounterContext.Provider
-                             value={{counter: counterState, setCouterState: setCouterState}}>
-        <div  className="App">
-                    {counterState}
+    return (
+        <CounterContext.Provider
+            value={{counter: counterState, setCouterState: setCouterState}}>
+            <div className="App">
+                {counterState}
 
-        </div>
-        <Dashboard/>
-    </CounterContext.Provider>
-  );
+            </div>
+            <Dashboard/>
+        </CounterContext.Provider>
+    );
 }
 
 export default App;
