@@ -1,12 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+
 import Dashboard from "./dashboard/Dashboard";
+
+import CounterContext from "./context/CounterContext";
 
 function App() {
   return (
-    <div className="App">
+    <CounterContext className="App">
       <Dashboard/>
-    </div>
+    </CounterContext>
   );
 }
 
