@@ -17,10 +17,6 @@ const Counter = () => {
 
     return(
         <div>
-            counter
-            <p>
-                {ctx.counter}
-            </p>
             <button onClick={addHandler}>+</button>
             <button onClick={removeHandler}>-</button>
 
