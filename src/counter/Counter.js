@@ -10,6 +10,11 @@ const Counter = () => {
         ctx.setCouterState(ctx.counter + 1)
     }
 
+    const removeHandler = () => {
+        ctx.setCouterState(ctx.counter - 1)
+
+    }
+
     return(
         <div>
             counter
@@ -17,7 +22,7 @@ const Counter = () => {
                 {ctx.counter}
             </p>
             <button onClick={addHandler}>+</button>
-            <button>-</button>
+            <button onClick={removeHandler}>-</button>
 
         </div>
     )
